@@ -1,1 +1,11 @@
-<p>browse works!</p>
+<div class="bg-black">
+    <div class="relative h-screen bg-black">
+        <app-header [logout]="true"></app-header>
+        <img class="h-screen object-cover" src="../../../assets/home.jpg" alt="hero_image" />
+    </div>
+    <div>
+        <app-movie-category [title]="'Popular Movies'" [movieList]="popularMovies"></app-movie-category>
+        <app-movie-category [title]="'Top Rated Movies'" [movieList]="topRatedMovies"></app-movie-category>
+        <app-movie-category [title]="'Upcoming Movies'" [movieList]="upcomingMovies"></app-movie-category>
+    </div>
+</div>

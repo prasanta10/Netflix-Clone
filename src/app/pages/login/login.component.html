@@ -1,9 +1,7 @@
 <div class="bg_div h-screen">
-    <div class="header">
-        <img src="../../../assets/logo.png" alt="logo" class="w-52"/>
-    </div>
+    <app-header></app-header>
     <div class="w-full flex justify-center items-center">
-        <div class="md:w-2/4 w-3/4 lg:w-1/4 bg-black h-[550px] rounded-lg">
+        <div class="mt-28 md:w-2/4 w-3/4 lg:w-1/4 bg-black h-[550px] rounded-lg">
             <div class="flex flex-col p-12">
                 <h2 class="font-semibold text-white text-3xl mb-4">Sign In</h2>
                 <form (ngSubmit)="onSubmit()" autocomplete="off">
@@ -17,11 +15,6 @@
                     <button class="text-white font-semibold">Sign In</button>
                 </div>
             </form>
-            <div class="text-center">@if(error!= ""){
-                <p class="text-red-500 mt-2">{{error}}</p>
-            }
-            </div>
-            
                 <div class="text-[#807F81] mt-10 flex flex-col justify-between h-[100px]">
                     <div>
                         <p>Need Help?</p>

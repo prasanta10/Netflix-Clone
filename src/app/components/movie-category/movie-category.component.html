@@ -1,0 +1,10 @@
+<div class="mt-2">
+    <h3 class="text-white text-2xl font-semibold">
+        {{title}}
+    </h3>
+    <div class=" mt-2 flex gap-4 w-full overflow-y-auto no-scrollbar">
+        @for(movie of movieList; track movie){
+        <app-movie-card [movie]="movie"></app-movie-card>
+        }
+    </div>
+</div>
